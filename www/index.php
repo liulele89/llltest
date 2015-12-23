@@ -98,7 +98,7 @@ switch (ENVIRONMENT)
  * Include the path if the folder is not in the same directory
  * as this file.
  */
-	$system_path = 'system';
+	$system_path = '../system';
 
 /*
  *---------------------------------------------------------------
@@ -113,7 +113,7 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-	$application_folder = 'application';
+	$application_folder = '../application';
 
 /*
  *---------------------------------------------------------------
@@ -252,7 +252,7 @@ switch (ENVIRONMENT)
 		define('APPPATH', BASEPATH.$application_folder.DIRECTORY_SEPARATOR);
 	}
 
-	// The path to the "views" folder
+	// The path to the "views" folder$view_folder
 	if ( ! is_dir($view_folder))
 	{
 		if ( ! empty($view_folder) && is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
