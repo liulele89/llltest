@@ -17,9 +17,7 @@ class Welcome extends CI_Controller {
 	}
 	
 	public function llltest(){
-	    $year = date('Y')+1;
-	    $time = $year.'-12-31';
-	    echo $time;
+	    echo 111;
 	}
 	
     function create_randomstr($lenth = 6) {
